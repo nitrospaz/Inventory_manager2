@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "inventory_manager (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "inventory_manager (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
