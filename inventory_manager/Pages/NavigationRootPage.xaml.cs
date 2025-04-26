@@ -115,13 +115,7 @@ namespace inventory_manager.Pages
                         Navigate(typeof(Page2));
                     }
                 }
-                else if (selectedItem == MyFinancePage)
-                {
-                    if (rootFrame.CurrentSourcePageType != typeof(FinancePage))
-                    {
-                        Navigate(typeof(FinancePage));
-                    }
-                }
+
                 //else if (selectedItem == ColorItem)
                 //{
                 //    Navigate(typeof(ItemPage), "Color");

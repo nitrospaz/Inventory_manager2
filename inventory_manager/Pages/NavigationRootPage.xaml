@@ -78,11 +78,6 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
 
-                <NavigationViewItem x:Name="MyFinancePage" Content="My Finance Page">
-                    <NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xE8A9;" />
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
                 <!-- this is a drop down arrow section title -->
                 <!-- this is clickable as well -->
                 <!--

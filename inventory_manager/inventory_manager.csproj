@@ -19,9 +19,6 @@
     <SelfContained>true</SelfContained>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Pages\Dialogs\AddAccountDialog.xaml" />
-    <None Remove="Pages\Dialogs\AddTransactionDialog.xaml" />
-    <None Remove="Pages\FinancePage.xaml" />
     <None Remove="Pages\MainPage.xaml" />
     <None Remove="Pages\MainWindow.xaml" />
     <None Remove="Pages\NavigationRootPage.xaml" />
@@ -79,21 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Windows\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Pages\Dialogs\AddAccountDialog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Pages\Dialogs\AddTransactionDialog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Pages\FinancePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\NavigationRootPage.xaml">
