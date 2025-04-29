@@ -155,14 +155,14 @@ namespace inventory_manager
                 }
 
                 // Set the page and arguments to load when the app starts.
-                var targetPageType = typeof(MainPage);
+                var targetPageType = typeof(InventoryPage);
                 var targetPageArguments = string.Empty;
                 
                 // Load the main page into the frame.
                 rootPage.Navigate(targetPageType, targetPageArguments);
 
                 // if navigating to the main page
-                if (targetPageType == typeof(MainPage))
+                if (targetPageType == typeof(InventoryPage))
                 {
                     // highlight the first item in the navigation menu
                     var navItem = (NavigationViewItem)rootPage.NavigationView.MenuItems[0];

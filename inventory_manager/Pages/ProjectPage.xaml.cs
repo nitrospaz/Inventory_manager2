@@ -21,17 +21,11 @@ namespace inventory_manager.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Page2 : Page
+    public sealed partial class ProjectPage : Page
     {
-        public Page2()
+        public ProjectPage()
         {
             this.InitializeComponent();
-        }
-
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
-        {
-            // using this method gets out of sync with the nav buttons
-            Frame.Navigate(typeof(MainPage));
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

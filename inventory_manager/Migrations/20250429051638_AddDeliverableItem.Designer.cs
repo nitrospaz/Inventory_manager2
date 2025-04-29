@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using inventory_manager.Models;
 
@@ -10,9 +11,11 @@ using inventory_manager.Models;
 namespace inventory_manager.Migrations
 {
     [DbContext(typeof(InventoryContext))]
-    partial class InventoryContextModelSnapshot : ModelSnapshot
+    [Migration("20250429051638_AddDeliverableItem")]
+    partial class AddDeliverableItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
@@ -55,18 +58,14 @@ namespace inventory_manager.Migrations
 
                     b.Property<string>("Action")
                         .IsRequired()
-                        .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Details")
                         .IsRequired()
-                        .HasMaxLength(1000)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Timestamp")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
-                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

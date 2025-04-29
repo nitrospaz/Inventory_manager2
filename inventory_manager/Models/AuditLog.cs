@@ -3,7 +3,7 @@
 namespace inventory_manager.Models
 {
     /// <summary>
-    /// Represents an audit log entry in the inventory manager.
+    /// Represents an audit log entry.
     /// </summary>
     
     public class AuditLog

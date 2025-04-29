@@ -101,18 +101,18 @@ namespace inventory_manager.Pages
                 // NavigationView.MenuItems list on the NavigationRootPage.xaml
                 // if you add a new item to the list, you need to add a new case here
                 var selectedItem = args.SelectedItemContainer;
-                if (selectedItem == Home)
+                if (selectedItem == Inventory)
                 {
-                    if (rootFrame.CurrentSourcePageType != typeof(MainPage))
+                    if (rootFrame.CurrentSourcePageType != typeof(InventoryPage))
                     {
-                        Navigate(typeof(MainPage));
+                        Navigate(typeof(InventoryPage));
                     }
                 }
-                else if (selectedItem == MySecondPage)
+                else if (selectedItem == MyProjectPage)
                 {
-                    if (rootFrame.CurrentSourcePageType != typeof(Page2))
+                    if (rootFrame.CurrentSourcePageType != typeof(ProjectPage))
                     {
-                        Navigate(typeof(Page2));
+                        Navigate(typeof(ProjectPage));
                     }
                 }
 

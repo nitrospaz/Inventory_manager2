@@ -66,18 +66,19 @@
             <!-- these are the navigation links on the left -->
             <NavigationView.MenuItems>
                 <!-- this is a stand alone page -->
-                <NavigationViewItem
-                    x:Name="Home"
-                    AutomationProperties.AutomationId="Home"
-                    Content="Home"
-                    Icon="Home" />
 
-                <NavigationViewItem x:Name="MySecondPage" Content="My Second Page">
+                <NavigationViewItem
+                    x:Name="Inventory"
+                    AutomationProperties.AutomationId="Home"
+                    Content="Inventory"
+                    Icon="Home" />
+                
+                <NavigationViewItem x:Name="MyProjectPage" Content="Project Home Page">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE8A9;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-
+                
                 <!-- this is a drop down arrow section title -->
                 <!-- this is clickable as well -->
                 <!--
