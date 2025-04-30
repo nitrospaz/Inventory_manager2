@@ -21,6 +21,7 @@
   <ItemGroup>
     <None Remove="Pages\MainWindow.xaml" />
     <None Remove="Pages\NavigationRootPage.xaml" />
+    <None Remove="Pages\ProjectConfiguration.xaml" />
     <None Remove="Pages\SettingsPage.xaml" />
   </ItemGroup>
 
@@ -74,6 +75,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Windows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\ProjectConfiguration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\NavigationRootPage.xaml">

@@ -115,6 +115,13 @@ namespace inventory_manager.Pages
                         Navigate(typeof(ProjectPage));
                     }
                 }
+                else if (selectedItem == ProjectConfiguration)
+                {
+                    if (rootFrame.CurrentSourcePageType != typeof(ProjectConfiguration))
+                    {
+                        Navigate(typeof(ProjectConfiguration));
+                    }
+                }
 
                 //else if (selectedItem == ColorItem)
                 //{
