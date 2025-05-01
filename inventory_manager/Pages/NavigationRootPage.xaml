@@ -88,10 +88,8 @@
                 <!-- this is a drop down arrow section title -->
                 <!-- this is clickable as well -->
                 <NavigationViewItem
-                    x:Name="MyProjectPage"
                     AutomationProperties.AutomationId="ListOf"
-                    Content="Project Home Page"
-                    Tag="MyProjectPage">
+                    Content="Projects">
                     
                     <!-- this is the icon for the drop down section title -->
                     <NavigationViewItem.Icon>
@@ -103,10 +101,15 @@
                         <!-- these are the links to navigate to a page -->
                         <!-- Content is the actual visible label for the link -->
                         <NavigationViewItem
-                        x:Name="ProjectConfiguration"
-                        AutomationProperties.AutomationId="MySecond"
-                        Content="Project Configuration"
-                        Tag="ProjectConfiguration" />
+                            x:Name="MyProjectPage"
+                            AutomationProperties.AutomationId="ListOf"
+                            Content="Project Home Page"
+                            Tag="MyProjectPage"/>
+                        <NavigationViewItem
+                            x:Name="ProjectConfiguration"
+                            AutomationProperties.AutomationId="MySecond"
+                            Content="Project Configuration"
+                            Tag="ProjectConfiguration" />
                         <!-- add more NavigationViewItem here as needed -->
                 
                     </NavigationViewItem.MenuItems>

@@ -1,0 +1,25 @@
+<ContentDialog
+    x:Class="inventory_manager.Pages.Dialogs.AddPersonDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Add Person"
+    PrimaryButtonText="Save"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <StackPanel Orientation="Vertical" Spacing="10">
+        
+        <TextBox x:Name="NameTextBox" PlaceholderText="Name" />
+        <TextBlock x:Name="NameErrorTextBlock" Foreground="Red" Visibility="Collapsed" Margin="0,0,0,10"/>
+
+        <!-- this will be dynamically populated from code behind -->
+        <ComboBox x:Name="RoleComboBox" PlaceholderText="Select Role"/>
+        <TextBlock x:Name="RoleErrorTextBlock" Foreground="Red" Visibility="Collapsed" Margin="0,0,0,10"/>
+
+        <TextBlock Text="*Optional*"/>
+        <TextBox x:Name="EmailTextBox" PlaceholderText="Email" />
+        <TextBlock x:Name="EmailErrorTextBlock" Foreground="Red" Visibility="Collapsed" Margin="0,0,0,10"/>
+
+    </StackPanel>
+</ContentDialog>
